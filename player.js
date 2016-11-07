@@ -36,7 +36,33 @@ function cell(n){
           posible.push(i);
         }
       }
-      var t = Math.round(Math.random()*posible.length);
+      var t = -1;
+      switch(document.getElementById("difficulty").value){
+        case "easy":
+         t = Math.round(Math.random()*posible.length);
+        break;
+        case "cheater":
+          turn = 1;
+          cell(0);
+          turn = 1;
+          cell(1);
+          turn = 1;
+          cell(2);
+          turn = 1;
+          cell(3);
+          turn = 1;
+          cell(4);
+          turn = 1;
+          cell(5);
+          turn = 1;
+          cell(6);
+          turn = 1;
+          cell(7);
+          turn = 1;
+          cell(8);
+          t = 0;
+        break;
+      }
       cell(posible[t]);
     }
   }

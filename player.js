@@ -55,6 +55,7 @@ function cell(n){
           cell(t);
         break;
         case "hard":
+          t = Math.round(Math.random()*posible.length);
           if(posible.length === 8){
              if(getCell(1).innerHTML!==""){
                if(Math.random()>0.5){
@@ -84,6 +85,23 @@ function cell(n){
                  t = 2;
                }
              }
+             if(getCell(0).innerHTML!=="" ||getCell(2).innerHTML!==""||getCell(6).innerHTML!==""||getCell(8).innerHTML!==""){
+                  t = 4;
+             }
+          }
+          for(var i = 0;i<rows.length;i++){
+            if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&getCell(rows[i][2]).innerHTML===""){
+              t = rows[i][2];
+              console.log(t);
+              i = rows.length+1;
+            }
+          }
+          for(var i = 0;i<rows.length;i++){
+            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===""){
+              t = rows[i][1];
+              console.log(t);
+              i = rows.length+1;
+            }
           }
           cell(t);
         break;

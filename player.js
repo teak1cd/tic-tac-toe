@@ -54,6 +54,39 @@ function cell(n){
           }
           cell(t);
         break;
+        case "hard":
+          if(posible.length === 8){
+             if(getCell(1).innerHTML!==""){
+               if(Math.random()>0.5){
+                 t = 6;
+               }else{
+                 t = 8;
+               }
+             }
+             if(getCell(3).innerHTML!==""){
+               if(Math.random()>0.5){
+                 t = 2;
+               }else{
+                 t = 8;
+               }
+             }
+             if(getCell(5).innerHTML1==""){
+               if(Math.random()>0.5){
+                 t = 0;
+               }else{
+                 t = 6;
+               }
+             }
+            if(getCell(7).innerHTML1==""){
+               if(Math.random()>0.5){
+                 t = 0;
+               }else{
+                 t = 2;
+               }
+             }
+          }
+          cell(t);
+        break;
         case "cheater":
           turn = 1;
           cell(0);

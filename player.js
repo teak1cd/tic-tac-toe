@@ -41,6 +41,7 @@ function cell(n){
       switch(document.getElementById("difficulty").value){
         case "easy":
          t = Math.round(Math.random()*posible.length);
+         cell(posible[t]);
         break;
         case "normal":
           t = Math.round(Math.random()*posible.length);
@@ -51,6 +52,7 @@ function cell(n){
               i = rows.length+1;
             }
           }
+          cell(t);
         break;
         case "cheater":
           turn = 1;
@@ -74,7 +76,6 @@ function cell(n){
           t = 0;
         break;
       }
-      cell(posible[t]);
     }
   }
 }

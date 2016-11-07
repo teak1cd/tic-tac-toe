@@ -1,6 +1,7 @@
 var turn = 0;
 var player = ["<h1>O</h1>","<h1>X</h1>"];
 var comb = ["012","345","678","036","147","258","048","246"];
+var rows = ["012","210","345","543","678","876","036","630","147","741","258","825","840","048","246","642"];
 function getCell(n,m){
 if(typeof m !== "undefined"){
   return getCell(n*3+m-1); 
@@ -40,6 +41,14 @@ function cell(n){
       switch(document.getElementById("difficulty").value){
         case "easy":
          t = Math.round(Math.random()*posible.length);
+        break;
+        case "normal":
+          for(var i = 0;i<rows.length;i++){
+            if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&posible.includes(rows[i][2])){
+              t = rows[1][2];
+              i = rows.leinth+1;
+            }
+          }
         break;
         case "cheater":
           turn = 1;

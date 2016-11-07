@@ -4,9 +4,9 @@ var comb = ["012","345","678","036","147","258","048","246"];
 var rows = ["012","210","345","543","678","876","036","630","147","741","258","825","840","048","246","642"];
 function getCell(n,m){
 if(typeof m !== "undefined"){
-  return getCell(n*3+m-1); 
+  return getCell(Math.floor(n*3+m-1)); 
 }
-return document.getElementsByClassName("cell")[n];
+return document.getElementsByClassName("cell")[Math.floor(n)];
 }
 function cell(n){
   if(getCell(n).innerHTML === ""){

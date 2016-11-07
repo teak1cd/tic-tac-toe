@@ -37,7 +37,7 @@ function cell(n){
           posible.push(i);
         }
       }
-      var t = -1;
+      var t = 0;
       switch(document.getElementById("difficulty").value){
         case "easy":
          t = Math.round(Math.random()*posible.length);

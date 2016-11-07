@@ -46,7 +46,7 @@ function cell(n){
           for(var i = 0;i<rows.length;i++){
             if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&posible.includes(rows[i][2])){
               t = rows[1][2];
-              i = rows.leinth+1;
+              i = rows.length+1;
             }
           }
         break;

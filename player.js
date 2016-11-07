@@ -43,6 +43,7 @@ function cell(n){
          t = Math.round(Math.random()*posible.length);
         break;
         case "normal":
+          t = Math.round(Math.random()*posible.length);
           for(var i = 0;i<rows.length;i++){
             if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&posible.includes(rows[i][2])){
               t = rows[1][2];

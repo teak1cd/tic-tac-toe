@@ -1,7 +1,7 @@
 var turn = 0;
 var player = ["<h1>O</h1>","<h1>X</h1>"];
 var comb = ["012","345","678","036","147","258","048","246"];
-var rows = ["012","210","345","543","678","876","036","630","147","741","258","825","840","048","246","642","021","354","687","084","264","036","174","285"];
+var rows = ["012","210","345","543","678","876","036","630","147","741","258","825","840","048","246","642","021","354","687","084","268","036","174","285"];
 function getCell(n,m){
 if(n>8||n<0){
   alert("n overflow:"+n);
@@ -109,7 +109,7 @@ function cell(n){
             }
           }
           console.log(t);
-          if(!posible.includes(t)) t = Math.round(Math.random()*posible.length);
+          if(!posible.includes(t)) t = posible[Math.round(Math.random()*posible.length)];
           console.log(t);
           console.log(posible);
           cell(t);

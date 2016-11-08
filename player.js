@@ -108,6 +108,7 @@ function cell(n){
               st=true;
             }
           }
+          console.log(t);
           cell(t);
         break;
         case "cheater":

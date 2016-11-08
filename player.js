@@ -109,6 +109,8 @@ function cell(n){
             }
           }
           console.log(t);
+          if(!posible.includes(t)) t = Math.round(Math.random()*posible.length);
+          console.log(t);
           cell(t);
         break;
         case "cheater":

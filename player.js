@@ -59,6 +59,7 @@ function cell(n){
           cell(t);
         break;
         case "hard":
+          var st = false;
           t = Math.round(Math.random()*posible.length);
           if(posible.length === 8){
              if(getCell(1).innerHTML!==""){
@@ -94,17 +95,17 @@ function cell(n){
              }
           }
           for(var i = 0;i<rows.length;i++){
-            if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&getCell(rows[i][2]).innerHTML===""){
+            if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&getCell(rows[i][2]).innerHTML===""&&!st){
               t = rows[i][2];
-              alert(t);
               i = rows.length+1;
+              st = true;
             }
           }
           for(var i = 0;i<rows.length;i++){
-            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===""){
+            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===""&!st){
               t = rows[i][1];
-              alert(t);
               i = rows.length+1;
+              st=true;
             }
           }
           cell(t);

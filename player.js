@@ -4,13 +4,9 @@ var comb = ["012","345","678","036","147","258","048","246"];
 var rows =
 ["012","120","021","345","453","354","678","786","687","786","687","036","360","063","147","471","174","258","582","285","048","480","084","642","426","624"];
 function getCell(n,m){
-alert(n);
 if(n>8||n<0 || typeof n === "undefined"){
-  console.log("ERROR:"+n);
+  alert("ERROR:"+n);
   n=8;
-}
-if(typeof m !== "undefined"){
-  return getCell(Math.floor(n*3+m-1)); 
 }
 return document.getElementsByClassName("cell")[Math.floor(n)];
 }

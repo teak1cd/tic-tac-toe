@@ -96,17 +96,17 @@ function cell(n){
              }
           }
           for(var i = 0;i<rows.length;i++){
-            if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(getCell(rows[i][2]).innerHTML))){
+            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(getCell(rows[i][2]).innerHTML))){
               t = rows[i][2];
               i = rows.length+1;
               st = true;
             }
           }
           for(var i = 0;i<rows.length;i++){
-            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===""&!st&&posible.includes(Math.floor(getCell(rows[i][1]).innerHTML))){
-              t = rows[i][1];
+            if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(getCell(rows[i][2]).innerHTML))){
+              t = rows[i][2];
               i = rows.length+1;
-              st=true;
+              st = true;
             }
           }
           console.log(t);

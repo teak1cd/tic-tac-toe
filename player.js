@@ -1,4 +1,4 @@
-alert("using player.js v1");
+alert("using player.js v1.01");
 var turn = 0;
 var player = ["<h1>O</h1>","<h1>X</h1>"];
 var comb = ["012","345","678","036","147","258","048","246"];
@@ -97,14 +97,14 @@ function cell(n){
              }
           }
           for(var i = 0;i<rows.length;i++){
-            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(getCell(rows[i][2]).innerHTML))){
+            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(rows[i][2]))){
               t = rows[i][2];
               i = rows.length+1;
               st = true;
             }
           }
           for(var i = 0;i<rows.length;i++){
-            if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(getCell(rows[i][2]).innerHTML))){
+            if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(rows[i][2])){
               t = rows[i][2];
               i = rows.length+1;
               st = true;

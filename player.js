@@ -107,7 +107,7 @@ function cell(n){
           for(var i = 0;i<rows.length;i++){
             if(getCell(rows[i][0]).innerHTML===player[0]&&getCell(rows[i][1]).innerHTML===player[0]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(rows[i][2]))){
               t = rows[i][2];
-              alert("O:"rows[i]);
+              alert("O:"+rows[i]);
               i = rows.length+1;
               st = true;
             }

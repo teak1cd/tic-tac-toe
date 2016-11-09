@@ -1,3 +1,4 @@
+alert("using player.js v1");
 var turn = 0;
 var player = ["<h1>O</h1>","<h1>X</h1>"];
 var comb = ["012","345","678","036","147","258","048","246"];

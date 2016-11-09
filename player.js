@@ -97,7 +97,7 @@ function cell(n){
              }
           }
           for(var i = 0;i<rows.length;i++){
-            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(rows[i][2]))){
+            if(getCell(rows[i][0]).innerHTML===player[1]&&getCell(rows[i][1]).innerHTML===player[1]&&getCell(rows[i][2]).innerHTML===""&&!st&&posible.includes(Math.floor(rows[i][2])){
               t = rows[i][2];
               i = rows.length+1;
               st = true;

@@ -12,6 +12,7 @@ if(n>8||n<0 || typeof n === "undefined"){
 return document.getElementsByClassName("cell")[Math.floor(n)];
 }
 function cell(n){
+  try{
   document.getElementById("debug").innerHTML="";
   if(getCell(n).innerHTML === ""){
     getCell(n).innerHTML = player[turn];
@@ -136,6 +137,9 @@ function cell(n){
         break;
       }
     }
+  }
+  }catch(e){
+    cell(n);
   }
 }
 function reset(){

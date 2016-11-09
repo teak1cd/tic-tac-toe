@@ -61,7 +61,7 @@ function cell(n){
         break;
         case "hard":
           var st = false;
-          t = Math.round(Math.random()*posible.length);
+          t = Math.floor(Math.random()*posible.length);
           if(posible.length === 8){
              if(getCell(1).innerHTML!==""){
                if(Math.random()>0.5){

@@ -4,6 +4,7 @@ var comb = ["012","345","678","036","147","258","048","246"];
 var rows =
 ["012","120","021","345","453","354","678","786","687","786","687","036","360","063","147","471","174","258","582","285","048","480","084","642","426","624"];
 function getCell(n,m){
+document.getElementById("debug").innerHTML+=n;
 if(n>8||n<0 || typeof n === "undefined"){
   alert("ERROR:"+n);
   n=8;
@@ -11,6 +12,7 @@ if(n>8||n<0 || typeof n === "undefined"){
 return document.getElementsByClassName("cell")[Math.floor(n)];
 }
 function cell(n){
+  document.getElementById("debug").innerHTML="";
   if(getCell(n).innerHTML === ""){
     getCell(n).innerHTML = player[turn];
     turn === 0 ? turn = 1 : turn = 0;

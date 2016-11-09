@@ -110,7 +110,7 @@ function cell(n){
           }
           console.log(t);
           console.log(posible);
-          if(document.getElementById("debug").innerHTML==="")t = posible[Math.floor(Math.random()*posible.length)];
+          if(document.getElementById("debug").innerHTML.length===1)t = posible[Math.floor(Math.random()*posible.length)];
           cell(t);
         break;
         case "cheater":

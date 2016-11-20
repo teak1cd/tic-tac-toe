@@ -12,7 +12,7 @@ if(n>8||n<0 || typeof n === "undefined"){
 return document.getElementsByClassName("cell")[Math.floor(n)];
 }
 function cell(n){
-  try{
+ // try{
   document.getElementById("debug").innerHTML="";
   if(getCell(n).innerHTML === ""){
     getCell(n).innerHTML = player[turn];
@@ -138,9 +138,9 @@ function cell(n){
       }
     }
   }
-  }catch(e){
+  //}catch(e){
     cell(n);
-  }
+  //}
 }
 function reset(){
   for(var i = 0;i<9;i++){

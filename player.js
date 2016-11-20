@@ -91,7 +91,7 @@ function cell(n){
                  t = 2;
                }
              }
-             if(getCell(0).innerHTML!=="" ||getCell(2).innerHTML!==""||getCell(6).innerHTML!==""||getCell(8).innerHTML!==""||getCell(4).innerHTML!==""){
+             if((getCell(0).innerHTML!=="" ||getCell(2).innerHTML!==""||getCell(6).innerHTML!==""||getCell(8).innerHTML!=="")&&getCell(4).innerHTML!==""){
                   t = 4;
              }
           }

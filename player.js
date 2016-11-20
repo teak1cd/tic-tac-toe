@@ -139,7 +139,7 @@ function cell(n){
     }
   }
   //}catch(e){
-    cell(n);
+    //cell(n);
   //}
 }
 function reset(){

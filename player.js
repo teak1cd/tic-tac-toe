@@ -63,28 +63,28 @@ function cell(n){
           var st = false;
           t = Math.floor(Math.random()*posible.length);
           if(posible.length === 8){
-             if(getCell(1).innerHTML!==""){
+             if(getCell(1).innerHTML!=""){
                if(Math.random()>0.5){
                  t = 6;
                }else{
                  t = 8;
                }
              }
-             if(getCell(3).innerHTML!==""){
+             if(getCell(3).innerHTML!=""){
                if(Math.random()>0.5){
                  t = 2;
                }else{
                  t = 8;
                }
              }
-             if(getCell(5).innerHTML1==""){
+             if(getCell(5).innerHTML!=""){
                if(Math.random()>0.5){
                  t = 0;
                }else{
                  t = 6;
                }
              }
-            if(getCell(7).innerHTML1==""){
+            if(getCell(7).innerHTML!=""){
                if(Math.random()>0.5){
                  t = 0;
                }else{

@@ -7,7 +7,8 @@ function getCell(n,m){
 document.getElementById("debug").innerHTML+=n;
 if(n>8||n<0 || typeof n === "undefined"){
   alert("ERROR:"+n);
-  n=8;
+  throw new TypeError(n);
+  return null;
 }
 return document.getElementsByClassName("cell")[Math.floor(n)];
 }
